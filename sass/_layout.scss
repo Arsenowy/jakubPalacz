@@ -3,6 +3,14 @@
   display: block;
   max-width: 300px;
   @include media-breakpoint-down(lg) {
+    max-width: 250px;
+  }
+  @include media-breakpoint-down(md) {
+    max-width: 190px;
+  }
+  @include media-breakpoint-down(sm) {
+    max-width: 350px;
+    width: 85%;
     margin: 1rem auto;
   }
 
@@ -10,7 +18,7 @@
     max-width: 100%;
   }
 }
-.container-evenly {
+.container-around {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -20,12 +28,57 @@
   }
 }
 
+.font-weight-bold {
+  font-weight: 700;
+}
+
 //topbar
 .topbar.topbar--primary {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  & > .container > .row {
-    margin-right: 0;
+  position: relative;
+  z-index: 3;
+
+  & > .container-around {
+    max-width: 1050px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding-left: 4rem;
+  padding-right: 4rem;
+  @include media-breakpoint-down(lg) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  @include media-breakpoint-down(sm) {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  }
+  & .contact-info {
+    .icon-box {
+      color: $color-primary;
+      padding: 14px;
+      border-radius: 5px;
+      border: 3px solid $color-primary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 12px;
+      @include media-breakpoint-down(md) {
+        padding: 10px;
+      }
+      @media screen and (max-width: 340px) {
+        border: none;
+        padding: 0;
+      }
+      & > i {
+        font-size: 20px;
+        @include media-breakpoint-down(md) {
+          font-size: 18px;
+        }
+      }
+    }
+    .item {
+      display: flex;
+    }
   }
 }
 
@@ -34,4 +87,28 @@ ul.contact-info {
   display: flex;
   justify-content: flex-end;
   gap: 50px;
+  margin: 0;
+  padding-left: 0;
+  @include media-breakpoint-down(md) {
+    gap: 25px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 10px 0 20px;
+  }
+  & .contact-info__phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & a {
+      text-decoration: none;
+      color: $color-primary;
+      @include media-breakpoint-down(md) {
+        font-size: 14px;
+      }
+      &.font-weight-bold {
+        color: #000;
+      }
+    }
+  }
 }

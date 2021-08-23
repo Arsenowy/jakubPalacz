@@ -1,0 +1,55 @@
+
+
+ul.menu {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  background-color: $color-primary;
+  margin: 0;
+  padding: 10px;
+  font-size: 18px;
+
+  @media screen and (max-width: 575px) {
+    transition: transform 0.5s ease-in-out;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 221px);
+  }
+
+  & > li > a.nav-link{
+    color: #fff;
+  }
+}
+
+.menu-toggler {
+  justify-content: flex-end;
+  background-color: $color-primary;
+  display: none;
+  position: relative;
+  z-index: 3;
+  @media screen and (max-width: 575px) {
+    display: flex;
+  }
+
+  &__icon {
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 0.5rem 3rem;
+  }
+}
+
+.opacity0 {
+  @media screen and (max-width: 575px) {
+    opacity: 0 !important;
+  }
+}
+.toggleUp {
+  @media screen and (max-width: 575px) {
+    transform: translateY(-100%) !important;
+  }
+}

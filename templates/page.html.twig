@@ -43,80 +43,83 @@
  */
 #}
 <div class="layout-container">
+	<div class="menu-toggler">
+		<div class="menu-toggler__icon">
+			<i class="fas fa-bars"></i>
+		</div>
+	</div>
 
-  <div class="topbar topbar--primary">
-    <div class="container">
-      <div class="container-evenly">
-        <div class="col-5">
-          {{page.topbar_left}}
-        </div>
-        <div class="col-7">
-          {{page.topbar_right}}
-        </div>
-      </div>
-    </div>
-  </div>
-  {{page.menu}}
+	<div class="topbar topbar--primary">
+		<div class="container-around">
+			<div class="col-sm-5">
+				{{page.topbar_left}}
+			</div>
+			<div class="col-sm-7">
+				{{page.topbar_right}}
+			</div>
+		</div>
+	</div>
+	{{page.menu}}
 
-  {# {{ page.breadcrumb }} #}
-  <header role="banner">
-    {{ page.page_header }}
-  </header>
+	{# {{ page.breadcrumb }} #}
+	<header role="banner">
+		{{ page.page_header }}
+	</header>
 
 
-  {{ page.highlighted }}
-  {{ page.help }}
+	{{ page.highlighted }}
+	{{ page.help }}
 
-  <main role="main">
-    <a id="main-content" tabindex="-1"></a>
-    {# link is in html.html.twig #}
+	<main role="main">
+		<a id="main-content" tabindex="-1"></a>
+		{# link is in html.html.twig #}
 
-    <div class="layout-content">
-      {{ page.content }}
-    </div>
-    {# /.layout-content #}
+		<div class="layout-content">
+			{{ page.content }}
+		</div>
+		{# /.layout-content #}
 
-  </main>
+	</main>
 
-  <div class="banner-bottom">
-    {{ page.bottom_banner }}
-  </div>
+	<div class="banner-bottom">
+		{{ page.bottom_banner }}
+	</div>
 
-  <footer role="contentinfo">
-    <div class="footer footer--primary">
-      <div class="container-xl">
-        <div class="row">
-          <div class="col-lg-4 col-sm-6 col-12">
-            {{ page.footer1_left }}
-          </div>
-          <div class="col-lg-8 col-sm-6 col-12">
-            <div class="row">
-              <div class="col-lg-6 order-1 order-lg-0">
-                {{ page.footer1_middle }}
-              </div>
-              <div class="col-lg-6">
-                {{ page.footer1_right }}
-              </div>
-            </div>
+	<footer role="contentinfo">
+		<div class="footer footer--primary">
+			<div class="container-xl">
+				<div class="row">
+					<div class="col-lg-4 col-sm-6 col-12">
+						{{ page.footer1_left }}
+					</div>
+					<div class="col-lg-8 col-sm-6 col-12">
+						<div class="row">
+							<div class="col-lg-6 order-1 order-lg-0">
+								{{ page.footer1_middle }}
+							</div>
+							<div class="col-lg-6">
+								{{ page.footer1_right }}
+							</div>
+						</div>
 
-          </div>
+					</div>
 
-        </div>
-      </div>
-    </div>
-    <div class="footer footer--secondary">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-sm-6 order-1 order-sm-0">
-            {{ page.footer2_left }}
-          </div>
-          <div class="col-12 col-sm-6">
-            {{ page.footer2_right }}
-          </div>
-        </div>
-      </div>
-    </div>
+				</div>
+			</div>
+		</div>
+		<div class="footer footer--secondary">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-6 order-1 order-sm-0">
+						{{ page.footer2_left }}
+					</div>
+					<div class="col-12 col-sm-6">
+						{{ page.footer2_right }}
+					</div>
+				</div>
+			</div>
+		</div>
 
-  </footer>
+	</footer>
 </div>
 {# /.layout-container #}
