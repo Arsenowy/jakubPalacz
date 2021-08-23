@@ -1,0 +1,7 @@
+global:
+  css:
+    theme:
+      //fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap: { minified: true, external: true }
+      css/main.css: {}
+
+

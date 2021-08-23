@@ -1,0 +1,22 @@
+name: famatech_jakubpalacz
+type: theme
+core_version_requirement: 8.x || 9.x
+base theme: classy
+logo: images/logo_jakubpalacz.svg
+libraries:
+  - famatech_jakubpalacz/global
+regions:
+  topbar_left: "Topbar 1 left"
+  topbar_right: "Topbar 1 right"
+  menu: "Menu"
+  page_header: "Page Header"
+  breadcrumb: "Breadcrumb"
+  highlighted: "Highlighted"
+  help: "Help"
+  content: "Content"
+  bottom_banner: "Bottom banner"
+  footer1_left: "Footer 1 left"
+  footer1_middle: "Footer 1 middle"
+  footer1_right: "Footer 1 right"
+  footer2_left: "Footer 2 left"
+  footer2_right: "Footer 2 right"

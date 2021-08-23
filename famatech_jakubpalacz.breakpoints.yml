@@ -1,0 +1,38 @@
+famatech_jakubpalacz.x-small:
+  label: x-small
+  mediaQuery: ""
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x
+famatech_jakubpalacz.small:
+  label: small
+  mediaQuery: "(min-width: 575.98px) and (max-width: 767.98px)"
+  weight: 1
+  multipliers:
+    - 1x
+    - 2x
+famatech_jakubpalacz.medium:
+  label: medium
+  mediaQuery: "(min-width: 767.98px) and (max-width: 991.98px)"
+  weight: 2
+  multipliers:
+    - 1x
+famatech_jakubpalacz.large:
+  label: large
+  mediaQuery: "(min-width: 991.98px) and (max-width: 1199.98px)"
+  weight: 3
+  multipliers:
+    - 1x
+famatech_jakubpalacz.x-large:
+  label: x-large
+  mediaQuery: "(min-width: 1199.98px) and (max-width: 1399.98px)"
+  weight: 4
+  multipliers:
+    - 1x
+famatech_jakubpalacz.xx-large:
+  label: xx-large
+  mediaQuery: "(min-width: 1399.98px)"
+  weight: 5
+  multipliers:
+    - 1x
