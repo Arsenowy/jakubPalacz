@@ -1,0 +1,52 @@
+
+h1, .heading-primary, h2, .heading-secondary {
+  font-family: $font-primary;
+  color: $color-primary;
+}
+
+h1, .heading-primary {
+  font-size: 5.2rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  @include media-breakpoint-down(xxl) {
+    font-size: 4rem;
+  }
+  @include media-breakpoint-down(xl) {
+    font-size: 3.4rem;
+  }
+  @include media-breakpoint-down(lg) {
+    font-size: 2.8rem;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+  }
+  @media screen and (max-width: 350px) {
+    font-size: 1.9rem;
+  }
+}
+h2, .heading-secondary {
+  font-size: 2.4rem;
+  font-weight: 400;
+  @include media-breakpoint-down(xl) {
+    font-size: 2rem;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 1.8rem;
+  }
+  @media screen and (max-width: 350px) {
+    font-size: 1.2rem;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  color: $color-gray;
+  @include media-breakpoint-down(sm) {
+    font-size: 0.9rem;
+  }
+}

@@ -32,25 +32,28 @@
   font-weight: 700;
 }
 
+.row {
+  --bs-gutter-x: 0;
+}
+
 //topbar
 .topbar.topbar--primary {
   position: relative;
-  z-index: 3;
 
   & > .container-around {
-    max-width: 1050px;
+    max-width: 1450px;
     margin: 0 auto;
     background-color: #fff;
     padding-left: 4rem;
-  padding-right: 4rem;
-  @include media-breakpoint-down(lg) {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  @include media-breakpoint-down(sm) {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
+    padding-right: 4rem;
+    @include media-breakpoint-down(lg) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    @include media-breakpoint-down(sm) {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
   }
   & .contact-info {
     .icon-box {
@@ -109,6 +112,53 @@ ul.contact-info {
       &.font-weight-bold {
         color: #000;
       }
+    }
+  }
+}
+
+// banner
+
+.banner {
+  display: flex;
+  height: calc(90vh - 168px);
+  @include media-breakpoint-down(sm) {
+    height: calc(90vh - 201px);
+  }
+  &__text {
+    background-color: $color-primary-light;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 6rem;
+
+    @include media-breakpoint-down(xl) {
+      padding: 3rem;
+    }
+    @include media-breakpoint-down(md) {
+      background-image: $bannerGradient-light, url("../images/banner.jpg");
+      background-size: cover;
+      width: 100%;
+      background-position: 25% 30%;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 1.5rem;
+    }
+
+    & a {
+      text-decoration: none;
+      color: inherit;
+      font-weight: 700;
+    }
+  }
+  &__photo {
+    width: 50%;
+    background-image: $bannerGradient-dark, url("../images/banner.jpg");
+    background-size: cover;
+    background-position: 25% 30%;
+    @include media-breakpoint-down(md) {
+      display: none;
     }
   }
 }

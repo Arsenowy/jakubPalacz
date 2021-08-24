@@ -1,9 +1,15 @@
 $light-gray: hsl(0, 0%, 93%);
-$gray: hsl(0, 0%, 47%);
+$color-gray: #444;
 $dark-gray: hsl(0, 0%, 20%);
 
 $navbar-dark-color: hsl(0, 0%, 100%);
 $color-primary: #2A4160;
+$color-gradient-dark: hsla(206, 23%, 59%, 0.151);
+$color-primary-light: #F1F3F5;
+$color-gradient-light: #f1f3f5d3;
+
+$bannerGradient-dark: linear-gradient(($color-gradient-dark), ($color-gradient-dark));
+$bannerGradient-light: linear-gradient(($color-gradient-light), ($color-gradient-light));
 
 $font-primary: "Lato";
 $font-secondary: "Source Sans Pro";

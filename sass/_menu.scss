@@ -17,8 +17,9 @@ ul.menu {
     position: fixed;
     z-index: 2;
     left: 0;
+    top: 0;
     width: 100%;
-    height: calc(100vh - 221px);
+    height: 100vh;
   }
 
   & > li > a.nav-link{
@@ -30,10 +31,20 @@ ul.menu {
   justify-content: flex-end;
   background-color: $color-primary;
   display: none;
-  position: relative;
-  z-index: 3;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 4;
   @media screen and (max-width: 575px) {
     display: flex;
+  }
+  &-logo {
+    display: none;
+    text-align: center;
+    @include media-breakpoint-down(sm) {
+      display: inline;
+    }
   }
 
   &__icon {

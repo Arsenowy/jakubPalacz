@@ -30,8 +30,8 @@
 	{% import _self as menus %}
 	{% if items %}
 		<ul class="menu opacity0 toggleUp">
+				<a class="menu-toggler-logo" href="/"><img class="w-75" src="themes/custom/famatech_jakubpalacz/images/logo_white.svg" alt="Logo Jakub Palacz"></a>
 			{% for item in items %}
-
 				<li{{item.attributes.addClass(classes)}}>
 					{{ link(item.title, item.url, {'class': ['nav-link']}) }}
 					{% if item.below %}
