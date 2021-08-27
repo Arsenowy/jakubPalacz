@@ -5,17 +5,17 @@ h1, .heading-primary, h2, .heading-secondary {
 }
 
 h1, .heading-primary {
-  font-size: 5.2rem;
+  font-size: 4.2rem;
   font-weight: 600;
   margin-bottom: 3rem;
   @include media-breakpoint-down(xxl) {
-    font-size: 4rem;
+    font-size: 3.6rem;
   }
   @include media-breakpoint-down(xl) {
-    font-size: 3.4rem;
+    font-size: 3rem;
   }
   @include media-breakpoint-down(lg) {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
   @include media-breakpoint-down(sm) {
     font-size: 2.3rem;
@@ -26,13 +26,13 @@ h1, .heading-primary {
   }
 }
 h2, .heading-secondary {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 400;
   @include media-breakpoint-down(xl) {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   @include media-breakpoint-down(sm) {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   @media screen and (max-width: 350px) {
     font-size: 1.2rem;
@@ -48,5 +48,39 @@ h2, .heading-secondary {
   color: $color-gray;
   @include media-breakpoint-down(sm) {
     font-size: 0.9rem;
+  }
+}
+
+.simple-spacer {
+  margin: 4rem auto;
+  height: 3px;
+  width: 75%;
+  max-width: 1450px;
+  border-radius: 2px;
+  background: $color-secondary;
+  opacity: 0.2;
+}
+
+.button {
+  padding: 10px 24px;
+  text-decoration: none;
+  color: #fff !important;
+  background-color: $color-secondary;
+  box-shadow: 4px 4px 8px $dark-gray;
+  border-radius: 5px;
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 700;
+  border: none;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+ul {
+  & li {
+    margin-bottom: 6px;
   }
 }

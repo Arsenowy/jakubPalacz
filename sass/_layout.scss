@@ -116,7 +116,7 @@ ul.contact-info {
   }
 }
 
-// banner
+// frontpage banner
 
 .banner {
   display: flex;
@@ -159,6 +159,34 @@ ul.contact-info {
     background-position: 25% 30%;
     @include media-breakpoint-down(md) {
       display: none;
+    }
+  }
+}
+
+.footer {
+  background-color: $color-primary;
+  margin-top: 3rem;
+  &__container {
+    display: flex;
+    padding: 2rem;
+  }
+  &__logo {
+    width: 75vw;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  &__branding {
+    background-color: $color-primary-dark;
+    padding: 1rem;
+    font-family: $font-primary;
+    text-align: center;
+    & a {
+      text-decoration: none;
+      color: #fff;
+      @include media-breakpoint-down(sm) {
+        font-size: 12px;
+        letter-spacing: 0.4px;
+      }
     }
   }
 }

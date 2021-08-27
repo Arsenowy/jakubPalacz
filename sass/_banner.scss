@@ -1,0 +1,37 @@
+.banner-site {
+  background-image: url("../images/banner-sites.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-bottom: 4rem;
+  &--aboutme {
+  background-image: url("../images/banner-aboutme.jpg");
+  background-position: 50% 20%;
+
+  }
+  & > .col-12 {
+    margin: 8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
+    & span.field--name-title {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 3rem;
+      letter-spacing: 0.6px;
+      font-family: $font-primary;
+      @include media-breakpoint-down(sm) {
+        font-size: 36px;
+      }
+    }
+    & .breadcrumb {
+      & a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.contact {
+  & iframe {
+    width: 92%;
+  }
+  &__row {
+    margin-bottom: 5rem;
+    @include media-breakpoint-down(md) {
+      gap: 30px;
+      margin-bottom: 2rem;
+    }
+    & &--col > .block-block-content {
+      height: 100%;
+      & > div {
+        height: 100%;
+      }
+    }
+  }
+  &__adresses {
+    background-color: $color-secondary;
+    padding: 25px;
+    color: #fff;
+    border-radius: 6px;
+    box-shadow: 8px 8px 16px $dark-gray;
+    height: 90%;
+    margin: 3rem;
+
+    @include media-breakpoint-down(lg) {
+      margin: 1rem
+    }
+    & > h2 {
+
+      font-weight: 900;
+      color: inherit;
+      margin-bottom: 1rem;
+    }
+    & a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  &__heading {
+    color: $color-primary;
+    font-size: 2.4rem;
+    font-weight: 700;
+    @include media-breakpoint-down(xl) {
+      font-size: 2rem;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 1.8rem;
+    }
+    @media screen and (max-width: 350px) {
+      font-size: 1.4rem;
+    }
+  }
+  &__webform {
+    & form {
+      text-align: center;
+      & input, & textarea {
+        width: 75%;
+        margin: 0 auto;
+        padding: 8px;
+      }
+      & input.form-submit {
+        display: block;
+        width: auto;
+        margin: 0 auto;
+        padding: 8px 26px;
+
+      }
+    }
+  }
+}
