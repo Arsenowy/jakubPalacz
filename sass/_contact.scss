@@ -38,20 +38,7 @@
       color: inherit;
     }
   }
-  &__heading {
-    color: $color-primary;
-    font-size: 2.4rem;
-    font-weight: 700;
-    @include media-breakpoint-down(xl) {
-      font-size: 2rem;
-    }
-    @include media-breakpoint-down(sm) {
-      font-size: 1.8rem;
-    }
-    @media screen and (max-width: 350px) {
-      font-size: 1.4rem;
-    }
-  }
+  
   &__webform {
     & form {
       text-align: center;

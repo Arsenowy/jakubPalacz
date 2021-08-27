@@ -120,6 +120,7 @@ ul.contact-info {
 
 .banner {
   display: flex;
+  margin-bottom: 3rem;
   height: calc(90vh - 168px);
   @include media-breakpoint-down(sm) {
     height: calc(90vh - 201px);
